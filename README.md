@@ -13,5 +13,7 @@ Step 2. Drug response prediction
 - The MLP predictor is first trained on cell line data using drug-induced perturbation and rank-based gene expression embeddings.
 - Once trained, patient samples—transformed into weighted cell line representations from the alignment step—are passed through the predictor to infer drug response, without any further fine-tuning.
 
+![model1](img/Overview.png)
+
 ## Contact
 If you have any questions or concerns, please send an email to [inyoung.sung@snu.ac.kr](inyoung.sung@snu.ac.kr).
