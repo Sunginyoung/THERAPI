@@ -49,6 +49,13 @@ python train_predictor.py
 Running the above code learns the drug response prediction model using the source domain data (cancer cell line data from GDSC). The models are trained in 10 folds.
 The trained prediction models are saved in the `ckpts` folder.
 
+### 4. Predicting patient drug response
+```
+python test_TCGA.py
+```
+Running the above code predicts the drug response of the target domain data (patient tumor data from TCGA).
+The predicted value is stored in the `output` folder
+
 
 ## Contact
 If you have any questions or concerns, please send an email to [inyoung.sung@snu.ac.kr](inyoung.sung@snu.ac.kr).
