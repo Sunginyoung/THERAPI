@@ -14,11 +14,18 @@ Step 2. Drug response prediction
 
 ## Setup
 First, clone this repository and move to the directory.
-
 ```
 git clone https://github.com/Sunginyoung/THERAPI.git
-cd THERAPI/
 ```
+
+To install the appropriate environment for THERAPI, create a virtual environment and install the requirements befor running the code.
+```
+conda create -n [ENVIRONMENT NAME] python==3.9
+conda activate [ENVIRONMENT NAME]
+pip install -r requirements.txt
+```
+
+
 
 ## Contact
 If you have any questions or concerns, please send an email to [inyoung.sung@snu.ac.kr](inyoung.sung@snu.ac.kr).
