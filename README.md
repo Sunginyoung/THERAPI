@@ -26,7 +26,7 @@ pip install -r requirements.txt
 ```
 
 ## Running THERAPI
-1. Download the dataset used for the model from Google Drive to the `THERAPI/data` folder
+1. Download the dataset used for the model from [Google Drive](https://drive.google.com/drive/folders/1rnYXYwwqwfqS-q50D68EnYjkUUfw2an2?usp=drive_link) to the `THERAPI/data` folder
 ```
 cd THERAPI
 mkdir data
