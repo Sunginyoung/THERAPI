@@ -130,7 +130,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--seed', type=int, default=0)
     parser.add_argument('--device', type=str, default='cuda:1')
-    parser.add_argument('--data_dir', type=str, default='./data/')
+    parser.add_argument('--data_dir', type=str, default='../data/')
     args = parser.parse_args()
 
     train_aligner(args)
