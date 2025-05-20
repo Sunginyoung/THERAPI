@@ -25,6 +25,15 @@ conda activate [ENVIRONMENT NAME]
 pip install -r requirements.txt
 ```
 
+## Running THERAPI
+1. Download the dataset used for the model from Google Drive to the `THERAPI/data` folder
+```
+cd THERAPI
+mkdir data
+```
+2. Training aligner
+3. Training drug response predictor
+
 
 
 ## Contact
