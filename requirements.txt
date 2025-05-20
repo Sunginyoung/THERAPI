@@ -1,4 +1,6 @@
 torch==1.8.1+cu101
+torchvision==0.9.1+cu101
+torchaudio==0.8.1
 pandas==2.2.3
 numpy==1.24.4
 scikit-learn==1.6.0
