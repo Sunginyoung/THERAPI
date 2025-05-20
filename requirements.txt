@@ -1,0 +1,4 @@
+torch==1.8.1+cu101
+pandas==2.2.3
+numpy==1.24.4
+scikit-learn==1.6.0
