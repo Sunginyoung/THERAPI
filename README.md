@@ -12,5 +12,13 @@ Step 2. Drug response prediction
 
 ![model1](img/Overview.png)
 
+## Setup
+First, clone this repository and move to the directory.
+
+'''
+git clone https://github.com/Sunginyoung/THERAPI.git
+cd THERAPI/
+'''
+
 ## Contact
 If you have any questions or concerns, please send an email to [inyoung.sung@snu.ac.kr](inyoung.sung@snu.ac.kr).
