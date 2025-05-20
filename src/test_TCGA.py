@@ -44,7 +44,7 @@ def test_TCGA(args):
     hidden_dim1 = 256
     hidden_dim2 = 128
     output_dim = 1
-    folds = 1
+    folds = 10
 
     # load data
     tcga_resp_dir = args.data_dir + 'TCGA_resp.csv'
