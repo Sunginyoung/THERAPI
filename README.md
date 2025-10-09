@@ -32,7 +32,28 @@ cd THERAPI
 mkdir data
 cd data
 ```
-Download the dataset used for the model from [Google Drive](https://drive.google.com/drive/folders/1rnYXYwwqwfqS-q50D68EnYjkUUfw2an2?usp=drive_link) to the `THERAPI/data` folder
+Download the dataset used for the model from [Google Drive](https://drive.google.com/drive/folders/1rnYXYwwqwfqS-q50D68EnYjkUUfw2an2?usp=drive_link) to the `THERAPI/data` folder. After downloading the dataset, the folder structure under `THERAPI/data` should look as follows:
+```
+THERAPI/data/
+├── GDSC/
+│   ├── GDSC_split/
+│   ├── GDSC_gex.csv
+│   ├── GDSC_info.csv
+│   ├── GDSC_Drug_SMILES_Response.csv
+│   ├── GDSC_perturbation_float16.npy
+│   ├── GDSC_perturbation_compound_float16.npy
+│   └── GDSC_rankrepresentation.csv
+│
+└── TCGA/
+    ├── TCGA_unlabeled_gex.csv
+    ├── TCGA_unlabeled_info.csv
+    ├── TCGA_labeled_gex.csv
+    ├── TCGA_labeled_info.csv
+    ├── TCGA_Drug_SMILES_Response.csv
+    ├── TCGA_perturbation_float16.npy
+    ├── TCGA_perturbation_compound_float16.npy
+    └── TCGA_rankrepresentation.csv
+```
 
 #### 2. Training aligner
 ```
