@@ -54,7 +54,7 @@ THERAPI/data/
     ├── TCGA_perturbation_compound_float16.npy
     └── TCGA_rankrepresentation.csv
 ```
-For detailed descriptions of each file, please refer to the `README.txt` file inside the data/ directory.
+For detailed descriptions of each file, please refer to the `README.txt` file inside the `data/` directory.
 
 #### 2. Training aligner
 ```
