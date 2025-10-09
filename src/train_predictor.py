@@ -46,13 +46,13 @@ def train_predictor(args):
             train_idx, valid_idx, test_idx = pickle.load(f)
         fold_indices.append((train_idx, valid_idx, test_idx))
 
-    gdsc_resp_dir = os.path.join(args.data_dir, 'GDSC_resp.csv')
-    gdsc_rank_dir = os.path.join(args.data_dir, 'GDSC_rankrepresentation.csv')
-    gdsc_pert_dir = os.path.join(args.data_dir, 'GDSC_perturbation.npy')
-    gdsc_comp_dir = os.path.join(args.data_dir, 'GDSC_perturbation_compound.npy')
+    gdsc_resp_dir = os.path.join(args.data_dir, 'GDSC/GDSC_Durg_SMILES_Response.csv')
+    gdsc_rank_dir = os.path.join(args.data_dir, 'GDSC/GDSC_rankrepresentation.csv')
+    gdsc_pert_dir = os.path.join(args.data_dir, 'GDSC/GDSC_perturbation.npy')
+    gdsc_comp_dir = os.path.join(args.data_dir, 'GDSC/GDSC_perturbation_compound.npy')
 
     gdsc_resp_df = pd.read_csv(gdsc_resp_dir)
-    gdsc_rank_df = pd.read_csv(gdsc_rank_dir, index_col=0).loc[gdsc_resp_df['Cell_ID']].values
+    gdsc_rank_df = pd.read_csv(gdsc_rank_dir, index_col=0).loc[gdsc_resp_df['ID']].values
     gdsc_pert_np = np.load(gdsc_pert_dir)
     gdsc_comp_np = np.load(gdsc_comp_dir)
 
