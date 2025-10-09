@@ -47,10 +47,10 @@ def test_TCGA(args):
     folds = 10
 
     # load data
-    tcga_resp_dir = args.data_dir + 'TCGA_resp.csv'
-    tcga_rank_dir = args.data_dir + 'TCGA_rankrepresentation.csv'
-    tcga_pert_dir = args.data_dir + 'TCGA_perturbation.npy'
-    tcga_comp_dir = args.data_dir + 'TCGA_perturbation_compound.npy'
+    tcga_resp_dir = args.data_dir + 'TCGA/TCGA_Durg_SMILES_Response.csv'
+    tcga_rank_dir = args.data_dir + 'TCGA/TCGA_rankrepresentation.csv'
+    tcga_pert_dir = args.data_dir + 'TCGA/TCGA_perturbation.npy'
+    tcga_comp_dir = args.data_dir + 'TCGA/TCGA_perturbation_compound.npy'
 
     tcga_resp_df = pd.read_csv(tcga_resp_dir)
     tcga_rank_df = pd.read_csv(tcga_rank_dir, index_col=0).values
