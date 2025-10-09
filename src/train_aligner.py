@@ -26,11 +26,11 @@ def train_aligner(args):
     loss_c = 0.4
 
     # load data
-    gdsc_data_dir = os.path.join(args.data_dir, 'GDSC_gex.csv')
-    gdsc_info_dir = os.path.join(args.data_dir, 'GDSC_info.csv')
+    gdsc_data_dir = os.path.join(args.data_dir, 'GDSC/GDSC_gex.csv')
+    gdsc_info_dir = os.path.join(args.data_dir, 'GDSC/GDSC_info.csv')
 
-    tcga_unlabeled_data_dir = os.path.join(args.data_dir, 'TCGA_unlabeled_gex.csv')
-    tcga_unlabeled_info_dir = os.path.join(args.data_dir, 'TCGA_unlabeled_info.csv')
+    tcga_unlabeled_data_dir = os.path.join(args.data_dir, 'TCGA/TCGA_unlabeled_gex.csv')
+    tcga_unlabeled_info_dir = os.path.join(args.data_dir, 'TCGA/TCGA_unlabeled_info.csv')
 
     gdsc_data_df = pd.read_csv(gdsc_data_dir, index_col=0)
     gdsc_info_df = pd.read_csv(gdsc_info_dir)
