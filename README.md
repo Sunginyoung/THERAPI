@@ -54,6 +54,7 @@ THERAPI/data/
     ├── TCGA_perturbation_compound_float16.npy
     └── TCGA_rankrepresentation.csv
 ```
+For detailed descriptions of each file, please refer to the `README.txt` file inside the data/ directory.
 
 #### 2. Training aligner
 ```
@@ -75,7 +76,7 @@ The trained prediction models are saved in the `ckpts` folder.
 python test_TCGA.py
 ```
 Running the above code predicts the drug response of the target domain data (patient tumor data from TCGA).
-The predicted value is stored in the `output` folder
+The predicted value is stored in the `output` folder.
 
 
 ## Contact
