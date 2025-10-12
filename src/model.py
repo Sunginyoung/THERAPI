@@ -9,7 +9,7 @@ class AlignerDataset(Dataset):
         self.n_genes = self.data.shape[1]
         self.n_samples = self.data.shape[0]
         self.gene_set = data_df.columns.to_list()
-        assert data_label.lower() in ['gdsc', 'tcga']
+        assert data_label.lower() in ['gdsc', 'tcga', 'external']
         if data_label.lower() == 'gdsc':
             self.data_label = torch.ones(self.n_samples, dtype=torch.float32)
         else:
