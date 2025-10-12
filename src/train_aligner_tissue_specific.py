@@ -10,7 +10,7 @@ from utils import set_seed, Logger
 from center_loss import CenterLoss
 
 
-def train_aligner(args):
+def train_aligner_tissue_specific(args):
 
     model_name = f'THERAPI_aligner_{args.source}_{args.target}'
     logger = Logger(model_name)
@@ -128,4 +128,4 @@ if __name__ == '__main__':
     
     args = parser.parse_args()
 
-    train_aligner(args)
+    train_aligner_tissue_specific(args)
