@@ -68,8 +68,14 @@ For detailed descriptions of each file, please refer to the `README.txt` file in
 cd ../src
 python train_aligner.py
 ```
-Running the code above aligns the source domain data (cancer cell line data from GDSC) with the target domain data (patient tumor data from TCGA).
-The trained alignment model is saved in the `ckpts` folder.
+Running the code above aligns the source domain data (cancer cell line data from GDSC) with the target domain data (patient tumor data from TCGA). The trained alignment model is saved in the `ckpts` folder.
+To perform tissue-specific alignment, you can use the newly added script `train_aligner_tissue_specific.py`.  
+This version enables alignment between specific tissue subsets across datasets.  
+For example, to align GDSC cell-line data with External breast cancer patient data, run:
+```
+python train_aligner_tissue_specific.py --source GDSC --target External --tissue breast
+```
+The resulting model will be saved in the same `ckpts` directory, under a subfolder named after the specified tissue type.
 
 #### 3. Training drug response predictor
 ```
