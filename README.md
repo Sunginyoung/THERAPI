@@ -90,6 +90,19 @@ python test_TCGA.py
 Running the above code predicts the drug response of the target domain data (patient tumor data from TCGA).
 The predicted value is stored in the `output` folder.
 
+## Visualization
+
+The `visualizations/` folder contains Jupyter notebooks for reproducing the main figures presented in the manuscript.  
+These scripts visualize the alignment and survival analysis results corresponding to Figure 2, Figure 4, and Figure 5 of the paper.
+```
+THERAPI/visualizations/
+├── TCGA_ID_order.txt
+├── alignment_results_external.ipynb
+├── alignment_results_tcga.ipynb
+├── main_figure2.ipynb
+├── main_figure4(a).ipynb
+└── main_figure5(b).ipynb
+```
 
 ## Contact
 If you have any questions or concerns, please send an email to [inyoung.sung@snu.ac.kr](inyoung.sung@snu.ac.kr).
