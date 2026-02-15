@@ -6,9 +6,9 @@ THERAPI (Tumor Heterogeneity-aware Embedding for Response Adaptation and Patient
 
 The full model architecture is provided below. THERAPI consists of two steps;
 
-Step 1. Cell line-Patient Alignment
+Step 1. Alignment of patient tumors with cancer cell lines (Figure b and d)
 
-Step 2. Drug response prediction
+Step 2. Modeling perturbation and predicting drug response (Figure c)
 
 ![model1](img/Overview.png)
 
